@@ -1,6 +1,13 @@
 // Game called "How well do you know me?"
 const readlineSync = require('readline-sync');
 const chalk = require('chalk');
+
+console.log("Welcome to the", chalk.underline.red("DoYouKnowMeQuiz"), ".\nIt determines how much do you really know me.\n");
+
+var userName = readlineSync.question("Ques: Enter your(participant's) name?\nAns: ");
+
+console.log("\nWelcome",chalk.yellow(userName),"happy to see you!, the questions now follow:\n");
+
 //Calculating age based on current date so that this program is always legit and works correctly
 const d = new Date();
 var presentDate = d.getDate();
@@ -27,43 +34,43 @@ var score=0;
 //Buildiung Questionnaire
 var questionnaire = [
   {
-    question: "What is my full name?\nAns: ",
+    question: chalk.red("Ques: ") + "What is my full name?\n" + chalk.green("Ans: "),
     answer: "Divyansh Shukla",
   },
   {
-    question: "What is my age?\nAns: ",
+    question: chalk.red("Ques: ") + "What is my age?\n" + chalk.green("Ans: "),
     answer: currentAge,
   },
   {
-    question: "What brand is my dream car?\nAns: ",
+    question: chalk.red("Ques: ") + "What brand is my dream car?\n" + chalk.green("Ans: "),
     answer: "Lamborghini",
   },
   {
-    question: "What do I like more in between coffee/tea?\nAns: ",
+    question: chalk.red("Ques: ") + "What do I like more in between coffee/tea?\n" + chalk.green("Ans: "),
     answer: "Coffee",
   },
   {
-    question: "What Indian indie band is my all time favourite?\nAns: ",
+    question: chalk.red("Ques: ") + "What Indian indie band is my all time favourite?\n" + chalk.green("Ans: "),
     answer: "The Local Train",
   },
   {
-    question: "What is my favourite Bollywood movie? (Hint: Check spelling on Google)\nAns: ",
+    question: chalk.red("Ques: ") + "What is my favourite Bollywood movie? (Hint: Check spelling on Google)\n" + chalk.green("Ans: "),
     answer: "Yeh Jawaani Hai Deewani",
   },
   {
-    question: "Who is my favourite coding teacher?\nAns: ",
+    question: chalk.red("Ques: ") + "Who is my favourite coding teacher?\n" + chalk.green("Ans: "),
     answer: "Tanay Pratap",
   },
   {
-    question: "Am I a Hodophile?Yes/No (You can Google the meaning xD)\nAns: ",
+    question: chalk.red("Ques: ") + "Am I a Hodophile?Yes/No (You can Google the meaning xD)\n" + chalk.green("Ans: "),
     answer: "Yes", 
   },
   {
-    question: "Do I love anime, or find anime as a thing that kids watch? (Love/For Kids)\nAns: ",
+    question: chalk.red("Ques: ") + "Do I love anime, or find anime as a thing that kids watch? (Love/For Kids)\n" + chalk.green("Ans: "),
     answer: "Love",
   },
   {
-    question: "Do I like my coffee hot/cold?\nAns: ",
+    question: chalk.red("Ques: ") + "Do I like my coffee hot/cold?\n" + chalk.green("Ans: "),
     answer: "cold",
   },
 ];
