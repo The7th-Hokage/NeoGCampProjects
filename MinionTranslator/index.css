@@ -1,0 +1,35 @@
+body{
+    background-image: url("Background1.jpg");
+    background-size: cover;
+}
+
+h1{
+    font-family: "Comic Sans MS";
+    color: rgb(111,78,55);
+    margin-bottom: 6%;
+}
+
+.translateButton{
+    background-color: rgba(225,173,1,1);
+    font-family: "Brush Script MT";
+    width: 18%;
+    height: 10%;
+    font-size: 28px;
+    color: whitesmoke;
+    border-radius: 10px;
+}
+
+.inputArea{
+    border-radius: 5px;
+}
+
+.outputArea{
+    border-radius: 5px;   
+    margin-bottom: 1%;
+}
+
+.textToSpeech{
+    background-color: rgba(225,173,1,1);
+    color: white;
+    border-radius: 5px;
+}
